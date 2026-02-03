@@ -3,57 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai Akhil Chandra Devalla - Portfolio</title>
+    <title>Sai Akhil Chandra Devalla | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Sai Akhil Chandra Devalla</h1>
-        <p>Student | Java Learner | Chess Player</p>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate learner with a keen interest in Java programming, chess, and problem-solving. 
-        Currently pursuing my studies at AVNIET (2024-2026), I actively participate in competitions and events, 
-        including chess tournaments and volunteering initiatives.</p>
-    </section>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="nav-title">Akhil</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#internship">Internship</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+            <label class="switch">
+                <input type="checkbox" id="darkToggle">
+                <span class="slider"></span>
+            </label>
+        </li>
+    </ul>
+</nav>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Java Programming</li>
-            <li>Problem-Solving</li>
-            <li>Teamwork & Volunteering</li>
-        </ul>
-    </section>
+<!-- HEADER -->
+<header class="header">
+    <h1>Sai Akhil Chandra Devalla</h1>
+    <p>CSE (Data Science) | Python & ML | Chess Player</p>
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
+</header>
 
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Participated in Chess Tournaments (SNIST, JNTUH)</li>
-            <li>Volunteered for Mind Marathon</li>
-        </ul>
-    </section>
+<!-- ABOUT -->
+<section id="about" class="card">
+    <h2>About Me</h2>
+    <p>
+        I am a CSE (Data Science) student graduating in 2026 with hands-on experience
+        in Python, machine learning, and mobile application development.
+        I am currently interning at Eficaa Ensmart Solutions, building a face recognition
+        mobile application using Python and Kivy. I am also a published author in IJRASET
+        and an active chess player.
+    </p>
+</section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p>AVNIET, 2024-2026</p>
-    </section>
+<!-- SKILLS -->
+<section id="skills" class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Kivy</span>
+        <span>Machine Learning</span>
+        <span>SQL</span>
+        <span>HTML & CSS</span>
+        <span>Git & GitHub</span>
+        <span>WSL</span>
+    </div>
+</section>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <p>HP Life App: Data Science & Analytics</p>
-    </section>
+<!-- INTERNSHIP -->
+<section id="internship" class="card">
+    <h2>Internship</h2>
+    <h3>Mobile Application Development Intern – Eficaa Ensmart Solutions</h3>
+    <ul>
+        <li>Face recognition mobile application</li>
+        <li>Python & Kivy based development</li>
+        <li>ML-based face detection & recognition</li>
+        <li>Development using WSL</li>
+    </ul>
+</section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:saiakhilchandradevalla52@gmail.com">saiakhilchandradevalla52@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/saiakhilchandradevalla" target="_blank">Sai Akhil Chandra Devalla</a></p>
-    </section>
+<!-- PROJECTS -->
+<section id="projects" class="card">
+    <h2>Projects</h2>
 
-    <footer>
-        <p>© 2025 Sai Akhil Chandra Devalla. All Rights Reserved.</p>
-    </footer>
+    <div class="project-card">
+        <h3>📚 Library Management using Voice Assistant</h3>
+        <p>Voice-controlled system for managing library operations.</p>
+        <p><strong>Tech:</strong> Python, NLP, Speech Recognition, SQLite</p>
+    </div>
+
+    <div class="project-card">
+        <h3>🇮🇳 Bharat Yatra Sahayak</h3>
+        <p>Smart travel assistance system for tourists across India.</p>
+        <p>
+            📄 Published in IJRASET (2026) <br>
+            <a href="https://doi.org/10.22214/ijraset.2026.76792" target="_blank">View Paper</a>
+        </p>
+        <p><strong>Tech:</strong> Python, Web Technologies</p>
+    </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements" class="card">
+    <h2>Achievements & Activities</h2>
+    <ul>
+        <li>🥈 Runner-up – Inter-College Chess Competition</li>
+        <li>♟️ JNTUH Chess Selection Rounds</li>
+        <li>♟️ SNIST Chess Competition</li>
+        <li>🤝 Volunteer – Mind Marathon (Department Event)</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>
+        📧 Email: yourmail@gmail.com <br>
+        🔗 LinkedIn: <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">View Profile</a> <br>
+        💻 GitHub: <a href="https://github.com/Akhil100605" target="_blank">Akhil100605</a>
+    </p>
+</section>
+
+<footer class="footer">
+    © 2026 Sai Akhil Chandra Devalla
+</footer>
+
+<!-- DARK MODE SCRIPT -->
+<script>
+const toggle = document.getElementById("darkToggle");
+toggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark");
+});
+</script>
+
 </body>
 </html>
