@@ -131,6 +131,12 @@ body.dark .footer {
 body.dark a {
     color: #90caf9;
 }
+/* FIX SKILLS VISIBILITY IN DARK MODE */
+body.dark .skills span {
+    background: #2c2c2c;
+    color: #ffffff;
+    border: 1px solid #444;
+}
 
 /* TOGGLE SWITCH */
 .switch {
